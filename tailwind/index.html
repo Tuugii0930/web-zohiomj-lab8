@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Монгол цомог – Tailwind</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+  <header class="sticky top-0 z-10 border-b border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800">
+    <nav class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3" aria-label="Үндсэн цэс">
+      <a href="#top" class="mr-auto font-serif font-bold text-brand">Монгол цомог</a>
+      <button id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" class="rounded-md border border-slate-300 px-3 py-1 md:hidden dark:border-slate-600">☰ Цэс</button>
+      <ul id="menu" class="hidden w-full flex-col md:flex md:w-auto md:flex-row md:gap-1">
+        <li><a href="#gallery" class="block rounded-md px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-700">Цомог</a></li>
+        <li><a href="#contact" class="block rounded-md px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-700">Холбоо барих</a></li>
+      </ul>
+      <button id="theme" type="button" aria-pressed="false" class="rounded-md border border-slate-300 px-3 py-1 text-sm hover:bg-slate-200 dark:border-slate-600 dark:hover:bg-slate-700">Шөнийн горим</button>
+    </nav>
+  </header>
+
+  <section id="top" class="bg-linear-to-br from-brand to-emerald-950 py-16 text-white">
+    <div class="mx-auto max-w-6xl px-4">
+      <h1 class="font-serif text-4xl font-bold md:text-5xl">Монголын байгалийн зургийн цомог</h1>
+      <p class="mt-3 max-w-xl text-lg">Tailwind CSS-ээр хийсэн хувилбар.</p>
+      <a href="#gallery" class="mt-5 inline-block rounded-md bg-brand px-5 py-3 font-semibold text-white hover:bg-brand-dark">Цомог үзэх</a>
+    </div>
+  </section>
+
+  <main class="mx-auto max-w-6xl space-y-12 px-4 py-10">
+    <section id="gallery">
+      <h2 class="mb-4 font-serif text-2xl font-bold">Цомог</h2>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <img src="img/photo1.jpg" alt="Говийн уул, үүлэн тэнгэр" loading="lazy" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Говийн уул, үүлэн тэнгэр</h3>
+            <p class="mt-1 text-slate-600 dark:text-slate-300">Үүлэн сүүдэр хөвөх уудам хээр, говийн уулс.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <img src="img/photo2.jpg" alt="Уулын бэлийн бэлчээр" loading="lazy" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Уулын бэлийн бэлчээр</h3>
+            <p class="mt-1 text-slate-600 dark:text-slate-300">Цастай уулын өвөр дээр гэр, мал сүрэг бэлчинэ.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <img src="img/photo3.jpg" alt="Алтайн нуруу" loading="lazy" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Алтайн нуруу</h3>
+            <p class="mt-1 text-slate-600 dark:text-slate-300">Цастай оройтой нуруу, чулуун дээрх хаг хөвд.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <img src="img/photo4.jpg" alt="Мөрөн гол" loading="lazy" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Мөрөн гол</h3>
+            <p class="mt-1 text-slate-600 dark:text-slate-300">Нугалж урсах гол, ногоон тал дахь хонин сүрэг.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <img src="img/photo5.jpg" alt="Тайга ба нуур" loading="lazy" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Тайга ба нуур</h3>
+            <p class="mt-1 text-slate-600 dark:text-slate-300">Хуш, шинэсэн ой дунд цастай уул, нуур.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <img src="img/photo6.jpg" alt="Сарлагийн бэлчээр" loading="lazy" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Сарлагийн бэлчээр</h3>
+            <p class="mt-1 text-slate-600 dark:text-slate-300">Горхины хөвөөнд бэлчиж буй сарлагууд.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="mb-4 font-serif text-2xl font-bold">Аялалд бүртгүүлэх</h2>
+      <form id="form" novalidate class="max-w-xl space-y-4">
+        <div>
+          <label for="name" class="font-medium">Нэр</label>
+          <input id="name" type="text" required minlength="2" class="peer mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 data-[invalid]:border-red-500 dark:border-slate-600 dark:bg-slate-900">
+          <p class="mt-1 hidden text-sm text-red-500 peer-data-[invalid]:block">Нэрээ (2+ тэмдэгт) оруулна уу.</p>
+        </div>
+        <div>
+          <label for="email" class="font-medium">И-мэйл</label>
+          <input id="email" type="email" required class="peer mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 data-[invalid]:border-red-500 dark:border-slate-600 dark:bg-slate-900">
+          <p class="mt-1 hidden text-sm text-red-500 peer-data-[invalid]:block">Зөв и-мэйл хаяг оруулна уу.</p>
+        </div>
+        <div>
+          <label for="tour" class="font-medium">Аялал</label>
+          <select id="tour" required class="peer mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 data-[invalid]:border-red-500 dark:border-slate-600 dark:bg-slate-900">
+            <option value="">Сонгоно уу…</option>
+            <option>Говийн аялал</option><option>Алтайн нуруу</option><option>Тайгын алхалт</option>
+          </select>
+          <p class="mt-1 hidden text-sm text-red-500 peer-data-[invalid]:block">Аялалаа сонгоно уу.</p>
+        </div>
+        <div>
+          <label class="flex items-center gap-2"><input id="agree" type="checkbox" required class="peer"> Нөхцөлийг зөвшөөрч байна</label>
+          <p class="mt-1 hidden text-sm text-red-500 peer-data-[invalid]:block">Зөвшөөрөх шаардлагатай.</p>
+        </div>
+        <button type="submit" class="rounded-md bg-brand px-5 py-2 font-semibold text-white hover:bg-brand-dark">Илгээх</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 py-6 text-center text-slate-500 dark:border-slate-700">© 2026 Монгол цомог – Лаб 8 (Tailwind)</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* Брэндийн өнгө: CSS variable */
+:root { --brand: #2f9e8a; --brand-dark: #237868; }
+
+/* .btn-brand: Bootstrap-ийн --bs-btn-* variable-уудыг дарна */
+.btn-brand {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--brand-dark);
+  --bs-btn-hover-border-color: var(--brand-dark);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--brand-dark);
+  --bs-btn-active-border-color: var(--brand-dark);
+  --bs-btn-focus-shadow-rgb: 47, 158, 138;
+}
+.text-brand { color: var(--brand); }
+.hero { background: linear-gradient(135deg, var(--brand), #0d4a43 75%); }
+.card-img-top { height: 12rem; object-fit: cover; }
